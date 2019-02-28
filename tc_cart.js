@@ -22,7 +22,7 @@ for (var i = 0; i < item.length; i++) {
     cartHTML += "<td>" + itemDescription[i] + "</td> <td>$" + itemPrice[i] + "</td> <td>" + itemQty[i] + "</td>";
     var itemCost = itemPrice[i] * itemQty[i];
     cartHTML += "<td>$" + itemCost + "</td></tr>";
-    itemCost + orderTotal;
+    orderTotal += itemCost;
 }
 
 // This line of code added yet another table row to the 'cartHTML' variable
